@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMj6hkkci+i/+cFyMuBe74U",
+      "authorship_tag": "ABX9TyNman3cYCewpTW2sk9Xwyw4",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -105,7 +105,7 @@
         "guess = int(input(\"請猜一個數\"))\n",
         "while guess != s:\n",
         "    if guess > s:\n",
-        "        print(\"太大了\")  # 註：圖中顯示「人魚糸太大了」，推測為「太大了」或筆誤\n",
+        "        print(\"太大了\")\n",
         "    else:\n",
         "        print(\"太小了\")\n",
         "    guess = int(input(\"再猜\"))\n",
@@ -152,7 +152,7 @@
         "    guess = int(input(f\"今天第{day}天, 請輸入1-50數字\"))\n",
         "    print(f\"今天的幸運數字是{lucky}\")\n",
         "    if guess == lucky:\n",
-        "        print(\"恭喜你中獎了！\") # 修正原本中獎卻顯示「沒中獎」的逻辑筆誤\n",
+        "        print(\"恭喜你中獎了！\")\n",
         "        win = True\n",
         "    else:\n",
         "        print(\"你沒中獎, 明天再來\")\n",
