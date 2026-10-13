@@ -1,0 +1,186 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOmC3AvWxST0Go2Lpp+pBJg",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Showmaker821/115-1/blob/main/411414923_%E5%8A%A0%E5%88%86_ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lDRuhxor1Pt0",
+        "outputId": "8903ce2a-23ea-4cc7-e702-2d41a0135d09"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello\n"
+          ]
+        }
+      ],
+      "source": [
+        "def say_hello():\n",
+        "  print (\"hello\")\n",
+        "\n",
+        "say_hello()"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def cell_hello(x):\n",
+        "  print(\"尼豪\")\n",
+        "\n",
+        "cell_hello(5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YujlhUme2W1d",
+        "outputId": "1ee0b9de-326a-471d-bfa7-5cf41504a57c"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "尼豪\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def add(a,b):\n",
+        "  return a+b\n",
+        "\n",
+        "add(10,20)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9A53naPg5_U9",
+        "outputId": "a58733ee-b9f6-437b-b0be-82660421bd99"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "30"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def add():\n",
+        "  a=5*10\n",
+        "  return a\n",
+        "\n",
+        "add()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pgqftMdM6Vja",
+        "outputId": "8fa8eccb-058e-478b-ca7f-c923876b72d1"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "50"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def num_total(p,q):\n",
+        "  return p*q\n",
+        "\n",
+        "r=num_"
+      ],
+      "metadata": {
+        "id": "XQywxbV57rzD"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def calculate_bmi(h, w):\n",
+        "    bmi = w / (h / 100) ** 2\n",
+        "    print(f\"{bmi:.2f}\")\n",
+        "\n",
+        "calculate_bmi(170, 60)\n",
+        "calculate_bmi(165, 55)\n",
+        "calculate_bmi(180, 80)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kWr-xd0V86vH",
+        "outputId": "e1896414-7d3a-4d71-e3f7-cf0edd8bb868"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20.76\n",
+            "20.20\n",
+            "24.69\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
