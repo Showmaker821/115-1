@@ -1,0 +1,85 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPjGj2myndzNkDnJqfUEBrz",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Showmaker821/115-1/blob/main/411414923_H18_ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MW1jI5TMXM85",
+        "outputId": "8c77d0a3-1f94-46a0-b083-a837e1478ba5"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "=== 超市商品 ===\n",
+            "蘋果：50元\n",
+            "香蕉：30元\n",
+            "牛奶：60元\n",
+            "麵包：40元\n",
+            "請輸入商品名稱（輸入 / 結束）：乃\n",
+            "找不到商品\n",
+            "請輸入商品名稱（輸入 / 結束）：牛奶\n",
+            "請輸入商品名稱（輸入 / 結束）：/\n",
+            "牛奶 數量：1，單項小計：60 元\n",
+            "總金額：60 元\n"
+          ]
+        }
+      ],
+      "source": [
+        "products = {\"蘋果\": 50, \"香蕉\": 30, \"牛奶\": 60, \"麵包\": 40}\n",
+        "\n",
+        "print(\"=== 超市商品 ===\")\n",
+        "for name, price in products.items():\n",
+        "    print(f\"{name}：{price}元\")\n",
+        "\n",
+        "cart = {}\n",
+        "while True:\n",
+        "    item = input(\"請輸入商品名稱（輸入 / 結束）：\")\n",
+        "    if item == \"/\":\n",
+        "        break\n",
+        "    if item in products:\n",
+        "        cart[item] = cart.get(item, 0) + 1\n",
+        "    else:\n",
+        "        print(\"找不到商品\")\n",
+        "\n",
+        "total = 0\n",
+        "for item, qty in cart.items():\n",
+        "    subtotal = products[item] * qty\n",
+        "    total += subtotal\n",
+        "    print(f\"{item} 數量：{qty}，單項小計：{subtotal} 元\")\n",
+        "\n",
+        "print(f\"總金額：{total} 元\")"
+      ]
+    }
+  ]
+}
